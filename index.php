@@ -9,7 +9,7 @@
 // put full path to Smarty.class.php
 require('smarty/libs/Smarty.class.php');
 require __DIR__ . '/vendor/autoload.php';
-require 'BookDAO.php';
+require 'dao/BookDAO.php';
 
 $dotenv = Dotenv\Dotenv::create(__DIR__);
 $dotenv->load();
@@ -17,7 +17,7 @@ $dotenv->load();
 $smarty = new Smarty();
 
 $smarty->setTemplateDir('templates');
-$smarty->setCompileDir('templates_c');
+$smarty->setCompileDir('smarty/templates_c');
 $smarty->setCacheDir('smarty/cache');
 $smarty->setConfigDir('smarty/configs');
 

@@ -6,8 +6,8 @@
  * Time: 3:33 PM
  */
 
-require 'DBHandler.php';
-require 'Book.php';
+require 'db_helper/DBHandler.php';
+require 'vo/Book.php';
 
 class BookDAO
 {
